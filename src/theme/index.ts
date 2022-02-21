@@ -1,15 +1,21 @@
 export default {
     colors: {
-        white: '#FFFFFF',
-        black: '#25282B',
+        WHITE: '#FFFFFF',
+        BLACK: '#25282B',
 
-        blue: '#4485FD',
-        green: '#00CC6A',
+        BLUE: '#4485FD',
+        GREEN: '#00CC6A',
+        PURPLE: '#B79CFF',
+        CYAN: '#05D1ED',
+        SALMON: '#FFA188',
+        PINK: '#FF71C6',
+        ORANGE: '#FFB547',
+        RED: '#FF7070'
     },
 
     fonts: {
-        lato_regular: 'Lato_400Regular',
-        lato_bold: 'Lato_700Bold',
-        sourcesanspro_regular: 'SourceSansPro_400Regular'
+        LATO_REGULAR: 'Lato_400Regular',
+        LATO_BOLD: 'Lato_700Bold',
+        SOURCESANSPRO_REGULAR: 'SourceSansPro_400Regular'
     }
 }
