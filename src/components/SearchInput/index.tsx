@@ -1,4 +1,5 @@
 import React from "react";
+import { TextInputProps } from 'react-native';
 import { Entypo } from '@expo/vector-icons';
 
 import {
@@ -9,13 +10,25 @@ import {
 
 import { useTheme } from "styled-components/native";
 
-export function SearchInput(){
+interface SearchInputProps extends TextInputProps {
+    onSearch: () => void;
+}
+
+export function SearchInput({
+    onSearch,
+    ...rest
+}: SearchInputProps){
     const { COLORS } = useTheme();
 
     return(
         <Container>
-            <InputBox />
-            <InputButton>
+            <InputBox 
+                placeholder="Procurar"
+                {...rest}
+            />
+            <InputButton
+                onPress={onSearch}
+            >
                 <Entypo 
                     name='magnifying-glass'
                     size={32}

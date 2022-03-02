@@ -1,4 +1,5 @@
 import React from "react";
+import { TouchableOpacityProps } from "react-native";
 import { 
     Container,
     Photo,
@@ -13,7 +14,7 @@ import {
     SituationProps,
 } from "./styles";
 
-type DoctorCardProps = {
+interface DoctorCardProps extends TouchableOpacityProps {
     situation?: SituationProps;
     photo: string;
     name: string;
@@ -27,9 +28,12 @@ export function DoctorCard({
     name,
     category,
     location,
+    ...rest
 }: DoctorCardProps){
     return (
-        <Container>
+        <Container
+            {...rest}
+        >
             <Photo
                 source={{uri: photo}}
             />

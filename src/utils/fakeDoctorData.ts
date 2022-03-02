@@ -4,7 +4,7 @@ export const fakeDoctorData = [
     {
         id: 1,
         photo: 'https://github.com/paulo-gouvea.png',
-        name: 'Giorno Giovanna Brando',
+        name: 'Fulano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
         situation: 'Fechado'
@@ -12,7 +12,7 @@ export const fakeDoctorData = [
     {
         id: 2,
         photo: 'https://github.com/paulo-gouvea.png',
-        name: 'Giorno Giovanna Brando',
+        name: 'Fulano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
         situation: 'Aberto'
@@ -20,7 +20,7 @@ export const fakeDoctorData = [
     {
         id: 3,
         photo: 'https://github.com/paulo-gouvea.png',
-        name: 'Giorno Giovanna Brando',
+        name: 'Fulano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
         situation: 'Aberto'
@@ -28,7 +28,7 @@ export const fakeDoctorData = [
     {
         id: 4,
         photo: 'https://github.com/paulo-gouvea.png',
-        name: 'Giorno Giovanna Brando',
+        name: 'Fulano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
         situation: 'Fechado'

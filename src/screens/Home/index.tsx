@@ -52,7 +52,9 @@ export function Home(){
                     />
                 </AppointmentsButton>
 
-                <UserButton>
+                <UserButton
+                    onPress={()=>console.log('foto do usuario')}
+                >
                     <UserImage
                         source={{uri: 'https://github.com/paulo-gouvea.png'}}
                     />
@@ -64,7 +66,9 @@ export function Home(){
                 <Title color={COLORS.GRAY_DARK} >seu doutor</Title>
             </TitleContainer>
 
-            <SearchInput />
+            <SearchInput 
+                onSearch={() => console.log('procurando...')}
+            />
 
             <CategoryBox>
                 {
@@ -75,6 +79,7 @@ export function Home(){
                                 title={element.name} 
                                 color={element.color}
                                 icon={element.icon}
+                                onPress={() => console.log(element.name)}
                             />
                         )
                     })
@@ -84,7 +89,9 @@ export function Home(){
             <DoctorListHeader>
                 <DoctorListTitle>Melhores Doutores</DoctorListTitle>
                 <DoctorListButton>
-                    <DoctorListButtonTitle>
+                    <DoctorListButtonTitle
+                        onPress={() => console.log('ver todos')}
+                    >
                         Ver Todos
                     </DoctorListButtonTitle>
                 </DoctorListButton>
@@ -102,6 +109,7 @@ export function Home(){
                         category={item.category}
                         location={item.location}
                         situation={item.situation}
+                        onPress={()=> console.log(item.name)}
                     />
                 )}
             />

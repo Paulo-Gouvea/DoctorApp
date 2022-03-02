@@ -1,4 +1,5 @@
 import React from "react";
+import { TouchableOpacityProps } from "react-native";
 import { SvgProps } from 'react-native-svg';
 
 import {
@@ -9,7 +10,7 @@ import {
 
 import { useTheme } from 'styled-components/native';
 
-type CategoryCardProps = {
+interface CategoryCardProps extends TouchableOpacityProps {
     title: string;
     color: string;
     icon: React.FC<SvgProps>;
@@ -18,12 +19,15 @@ type CategoryCardProps = {
 export function CategoryCard({
     title,
     color,
-    icon: Icon
+    icon: Icon,
+    ...rest
 }: CategoryCardProps){
     const { COLORS } = useTheme();
 
     return (
-        <Container>
+        <Container
+            {...rest}
+        >
             <Button
                 color={color}
             >

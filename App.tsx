@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components/native';
 import theme from './src/theme';
 
 import { Home } from './src/screens/Home';
+import { DoctorInfo } from './src/screens/DoctorInfo';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

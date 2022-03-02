@@ -11,9 +11,7 @@ export const Container = styled.View`
     flex-direction: row;
 `;
 
-export const InputBox = styled.TextInput.attrs({
-    placeholder: 'Procurar'
-})`
+export const InputBox = styled.TextInput`
     height: 100%;
     width: 85%;
 
