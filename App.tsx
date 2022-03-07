@@ -8,8 +8,7 @@ import AppLoading from 'expo-app-loading';
 import { ThemeProvider } from 'styled-components/native';
 import theme from './src/theme';
 
-import { Home } from './src/screens/Home';
-import { DoctorInfo } from './src/screens/DoctorInfo';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -29,7 +28,7 @@ export default function App() {
         barStyle='dark-content'
         translucent
       />
-      <Home />
+      <Routes />
     </ThemeProvider>
   );
 }

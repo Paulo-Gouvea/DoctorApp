@@ -21,13 +21,14 @@ import { CATEGORIES } from "../../utils/categories";
 import { fakeDoctorData } from "../../utils/fakeDoctorData";
 
 import { useTheme } from "styled-components/native";
+import { useNavigation } from "@react-navigation/native";
 
 import { SearchInput } from "../../components/SearchInput";
 import { CategoryCard } from "../../components/CategoryCard";
 import { DoctorCard } from "../../components/DoctorCard";
 import { SituationProps } from "../../components/DoctorCard/styles";
 
-type doctorDataProps = {
+export type doctorDataProps = {
     id: number;
     photo: string;
     name: string;
@@ -40,6 +41,11 @@ export function Home(){
     const [doctorData, setDoctorData] = useState<doctorDataProps[]>(fakeDoctorData as doctorDataProps[])
 
     const { COLORS } = useTheme();
+    const { navigate } = useNavigation();
+
+    function handleDoctorInfo(doctor: doctorDataProps){
+        navigate('doctorinfo', { doctor });
+    }
 
     return(
         <Container>
@@ -109,7 +115,7 @@ export function Home(){
                         category={item.category}
                         location={item.location}
                         situation={item.situation}
-                        onPress={()=> console.log(item.name)}
+                        onPress={() => handleDoctorInfo(item)}
                     />
                 )}
             />

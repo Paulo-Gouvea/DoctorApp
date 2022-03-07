@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components/native";
 
-export const Container = styled.TouchableOpacity`
+interface ButtonProps {
+    color: string;
+}
+
+export const Container = styled.TouchableOpacity<ButtonProps>`
     width: 300px;
     height: 70px;
 
@@ -8,7 +12,7 @@ export const Container = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     
-    background-color: ${({ theme }) => theme.COLORS.GREEN};
+    background-color: ${({ color }) => color};
 `;
 
 export const Title = styled.Text`

@@ -6,16 +6,23 @@ import {
     Title,
 } from './styles';
 
+import { useTheme } from 'styled-components/native';
+
 interface ButtonProps extends TouchableOpacityProps {
     title: string;
+    color?: string;
 }
 
 export function Button({
     title,
+    color = useTheme().COLORS.GREEN,
     ...rest
 }: ButtonProps){
     return (
-        <Container {...rest} >
+        <Container 
+            color={color}
+            {...rest} 
+        >
             <Title>{title}</Title>
         </Container>
     )
