@@ -10,6 +10,8 @@ export declare global {
 
         interface RootParamList {
             signin: undefined;
+            createaccount: undefined;
+            confirmation: undefined;
             home: undefined;
             doctorinfo: DoctorNavigationProps;
         }

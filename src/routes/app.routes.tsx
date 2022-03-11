@@ -7,6 +7,8 @@ const { Navigator, Screen } = createNativeStackNavigator();
 import { SignIn } from "../screens/SignIn";
 import { Home } from "../screens/Home";
 import { DoctorInfo } from "../screens/DoctorInfo";
+import { CreateAccount } from '../screens/CreateAccount';
+import { Confirmation } from "../screens/Confirmation";
 
 export function AppRoutes(){
     return (
@@ -18,6 +20,16 @@ export function AppRoutes(){
             <Screen 
                 name="signin"
                 component={SignIn}
+            />
+
+            <Screen 
+                name="createaccount"
+                component={CreateAccount}
+            />
+
+            <Screen 
+                name="confirmation"
+                component={Confirmation}
             />
 
             <Screen 

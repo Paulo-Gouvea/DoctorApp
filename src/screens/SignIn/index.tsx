@@ -17,6 +17,7 @@ import { useTheme } from "styled-components/native";
 import { useNavigation } from "@react-navigation/native";
 
 import { Input } from "../../components/Input";
+import { PasswordInput } from "../../components/PasswordInput";
 import { Button } from "../../components/Button";
 
 export function SignIn(){
@@ -25,6 +26,10 @@ export function SignIn(){
 
     function handleSignIn(){
         navigate('home');
+    }
+
+    function handleCreateAccount(){
+        navigate('createaccount');
     }
 
     return (
@@ -43,11 +48,9 @@ export function SignIn(){
                             keyboardType="email-address"
                             autoCorrect={false}
                             autoCapitalize="none"
-                            
                         />
-                        <Input 
+                        <PasswordInput 
                             placeholder="Senha"
-                            iconName="lock"
                         />
                     </InputContainer>
 
@@ -59,6 +62,7 @@ export function SignIn(){
                         <Button 
                             title="Criar nova conta"
                             color={COLORS.RED}
+                            onPress={handleCreateAccount}
                         />
                     </ButtonContainer>
                 </Container>

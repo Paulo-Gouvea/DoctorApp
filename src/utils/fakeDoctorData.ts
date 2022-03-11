@@ -1,5 +1,3 @@
-import { SituationProps } from "../components/DoctorCard/styles"
-
 export const fakeDoctorData = [
     {
         id: 1,
@@ -7,7 +5,8 @@ export const fakeDoctorData = [
         name: 'Pedrin de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
-        situation: 'Fechado'
+        situation: 'Fechado',
+        description: 'Dr. Pedrin de Souza Silva is one of the best doctors in the Hospital do Hugo, José e Luiz. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.' 
     },
     {
         id: 2,
@@ -15,7 +14,8 @@ export const fakeDoctorData = [
         name: 'Brunin de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
-        situation: 'Aberto'
+        situation: 'Aberto',
+        description: 'Dr. Brunin de Souza Silva is one of the best doctors in the Hospital do Hugo, José e Luiz. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.' 
     },
     {
         id: 3,
@@ -23,7 +23,8 @@ export const fakeDoctorData = [
         name: 'Clicano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
-        situation: 'Aberto'
+        situation: 'Aberto',
+        description: 'Dr. Clicano de Souza Silva is one of the best doctors in the Hospital do Hugo, José e Luiz. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.' 
     },
     {
         id: 4,
@@ -31,6 +32,7 @@ export const fakeDoctorData = [
         name: 'Fulano de Souza Silva',
         category: 'Clínico geral',
         location: 'Hospital do Hugo, José e Luiz',
-        situation: 'Fechado'
+        situation: 'Fechado',
+        description: 'Dr. Fulano de Souza Silva is one of the best doctors in the Hospital do Hugo, José e Luiz. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule.' 
     }
 ]

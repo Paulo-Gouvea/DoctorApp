@@ -35,6 +35,7 @@ export type doctorDataProps = {
     category: string;
     location: string;
     situation: SituationProps;
+    description: string;
 }
 
 export function Home(){

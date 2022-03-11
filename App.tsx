@@ -10,6 +10,8 @@ import theme from './src/theme';
 
 import { Routes } from './src/routes';
 
+import { Confirmation } from './src/screens/Confirmation';
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Lato_400Regular,

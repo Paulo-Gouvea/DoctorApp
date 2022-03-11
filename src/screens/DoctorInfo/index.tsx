@@ -59,7 +59,7 @@ export function DoctorInfo(){
                 <Category>{doctor.category} ⦁ {doctor.location}</Category>
 
                 <Summary>
-                    Dr. Fulano de Souza Silva is one of the best doctors in the Persahabatan Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule. 
+                    {doctor.description}
                 </Summary>
 
                 <DoctorRatings>
