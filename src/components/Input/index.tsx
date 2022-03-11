@@ -13,6 +13,8 @@ import {
     InputBox,
 } from './styles';
 
+import { useTheme } from 'styled-components/native';
+
 interface InputProps extends TextInputProps{
     iconName: React.ComponentProps<typeof AntDesign>['name'];
 }
@@ -22,6 +24,7 @@ export function Input({
     ...rest
 }: InputProps){
     const [isFocused, setIsFocused] = useState(false);
+    const { COLORS } = useTheme();
 
     function handleInputFocus(){
         setIsFocused(true);
@@ -39,6 +42,7 @@ export function Input({
                 <AntDesign
                     name={iconName}
                     size={28}
+                    color={isFocused ? COLORS.RED : COLORS.BLACK}
                 />
             </IconContainer>
 

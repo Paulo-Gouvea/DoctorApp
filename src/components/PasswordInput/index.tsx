@@ -14,6 +14,8 @@ import {
     TouchableIconContainer
 } from './styles';
 
+import { useTheme } from 'styled-components/native';
+
 interface InputProps extends TextInputProps{}
 
 export function PasswordInput({
@@ -21,6 +23,7 @@ export function PasswordInput({
 }: InputProps){
     const [isFocused, setIsFocused] = useState(false);
     const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+    const { COLORS } = useTheme();
 
     function handleInputFocus(){
         setIsFocused(true);
@@ -42,6 +45,7 @@ export function PasswordInput({
                 <AntDesign
                     name='lock'
                     size={28}
+                    color={isFocused ? COLORS.RED : COLORS.BLACK}
                 />
             </IconContainer>
 

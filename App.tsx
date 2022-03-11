@@ -10,7 +10,7 @@ import theme from './src/theme';
 
 import { Routes } from './src/routes';
 
-import { Confirmation } from './src/screens/Confirmation';
+import { ChooseDate } from './src/screens/ChooseDate';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -30,7 +30,7 @@ export default function App() {
         barStyle='dark-content'
         translucent
       />
-      <Routes />
+      <ChooseDate />
     </ThemeProvider>
   );
 }
